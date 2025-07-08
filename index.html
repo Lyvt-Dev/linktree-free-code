@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calmly - Socials</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="social.css" />
+</head>
+<body>
+    <div id="tsparticles"></div>
+
+    <main class="linktree-container">
+        <img src="/images/pfpweb.png" alt="Profile Picture" class="profile-picture" />
+        <h1 class="username">@Calmly</h1>
+        <p class="description">17 y/o Full-Stack Developer from Germany 🇩🇪 | Building cool stuff with code.</p>
+
+        <nav class="links-container">
+            <a href="https://github.com/Lyvt-Dev" target="_blank" class="link-item">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://twitter.com/Lyvt_Dev" target="_blank" class="link-item">
+                <i class="fab fa-twitter"></i> Twitter
+            </a>
+            <a href="https://discord.gg/uT2vsZKrvn" target="_blank" class="link-item">
+                <i class="fab fa-discord"></i> Discord Server
+            </a>
+            <a href="mailto:contact@calmly-dev.xyz" class="link-item">
+                <i class="fas fa-envelope"></i> Email Me
+            </a>
+             <a href="../index.html" class="link-item">
+                <i class="fas fa-briefcase"></i> Portfolio
+            </a>
+        </nav>
+
+        <div class="social-icons-container">
+            <a href="https://github.com/Lyvt-Dev" target="_blank" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/Lyvt_Dev" target="_blank" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://discord.gg/uT2vsZKrvn" target="_blank" class="social-icon" aria-label="Discord"><i class="fab fa-discord"></i></a>
+        </div>
+
+        <!-- You can remove the footer if you want but you can give me credits if you want :3 !-->
+        <footer class="footer">
+            <p>&copy; 2025 Calmly. All rights reserved.</p>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.bundle.min.js"></script>
+    <script>
+        tsParticles.load("tsparticles", {
+            background: { color: { value: "transparent" } },
+            fpsLimit: 60,
+            interactivity: {
+                events: {
+                    onHover: { enable: true, mode: "grab" },
+                    onClick: { enable: true, mode: "push" },
+                },
+                modes: {
+                    grab: { distance: 180, links: { opacity: 0.8 } },
+                    push: { quantity: 4 },
+                },
+            },
+            particles: {
+                color: { value: "#3b82f6" },
+                links: {
+                    enable: true,
+                    color: "#3b82f6",
+                    distance: 150,
+                    opacity: 0.35,
+                    width: 1,
+                },
+                move: {
+                    enable: true,
+                    speed: 1.5,
+                    outModes: { default: "out" },
+                },
+                number: {
+                    value: 60,
+                    density: { enable: true, area: 800 },
+                },
+                opacity: { value: 0.5 },
+                shape: { type: "circle" },
+                size: { value: { min: 1, max: 3 } },
+            },
+            detectRetina: true,
+        });
+    </script>
+</body>
+</html>
